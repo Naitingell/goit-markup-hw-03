@@ -12,9 +12,29 @@ body {
   
 }
 
-.ul-nav .backlight {
-  color: var(--hover);
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  width: 1200px;
+  outline: red 1px solid;
 }
+h1, h2, h3, ul, p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0%;
+}
+
+li {
+  list-style: none;
+
+}
+
+.link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
 /* header */
 .logo-1 {
   color: var(--hover);
@@ -24,6 +44,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  
 }
 .logo-2 {
   color:#000000;
@@ -58,6 +80,9 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.ul-nav .backlight {
+  color: var(--hover);
+}
 
 .ul-nav :hover, 
 .ul-nav :focus{
@@ -77,13 +102,6 @@ li {
   text-decoration: none;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-top: 32px;
-  outline: red 1px solid;
-}
 /* hero */
 .hero {
     left: 0px;
@@ -128,9 +146,21 @@ padding: 10px 32px;
 
 .title-section {
   color: var(--title-text-color);
+  
 }
 h2, h3 {
   color: var(--title-text-color);
+}
+
+.container.benefits {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.benefits-h3 {
+  padding-bottom: 10px;
+}
+.title-geometry {
+  padding-bottom: 50px;
 }
 /* Кнопки */
 
@@ -190,6 +220,7 @@ p {
 
 footer {
   background-color: #2F303A;
+  height: 252px;
 }
 
 .adress .ul-adress :hover,
@@ -205,3 +236,4 @@ footer {
   color: var(--accent-color);
   font-style: normal;
 }
+
