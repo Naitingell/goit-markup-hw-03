@@ -12,22 +12,31 @@ body {
   
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 0px;
-  width: 1200px;
-  outline: red 1px solid;
-}
 h1, h2, h3, ul, p {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0%;
 }
 
+h2,
+h3 {
+  color: var(--title-text-color);
+}
+
 li {
+  margin: 0px;
+  padding: 0px;
+
   list-style: none;
 
+}
+footer {
+  background-color: #2F303A;
+  height: 252px;
+}
+
+p {
+  color: var(--primary-text-color);
 }
 
 .link {
@@ -35,8 +44,24 @@ li {
   text-decoration: none;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-left: 215px;
+  padding-right: 215px;
+
+  width: 1600px;
+  outline: red 1px solid;
+}
+
 /* header */
 .logo-1 {
+ 
+  margin-right: 93px;
+  margin-bottom: 25px;
+  margin-top: 24px;
+
   color: var(--hover);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -61,24 +86,28 @@ li {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
 
-  margin: 0px;
-  padding: 0px;
-  
-}
-.link {
+.ul-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   text-decoration: none;
 }
 
 .ul-nav  {
+  display: flex;
+  
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.ul-nav .item + .item {
+  margin-left: 50px;
 }
 .ul-nav .backlight {
   color: var(--hover);
@@ -88,7 +117,21 @@ li {
 .ul-nav :focus{
   color: var(--hover);
 }
+
+.adress-header {
+  display: flex;
+  margin-left: auto;
+}
+
+.adress-header .item + .item {
+  margin-left: 50px;
+}
+
 .adress-header .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -102,31 +145,42 @@ li {
   text-decoration: none;
 }
 
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+
 /* hero */
 .hero {
     left: 0px;
     top: 80px;
     background-color: #2F303A;
 }
+
 .hero-title {
+  color: var(--accent-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent-color);
+  
 }
+
 .hero .hero-button  {
   text-align: center;
 }
+
 .hero .hero-button1 {
+color: var(--accent-color);
+background-color: var(--hover);
  font-weight: 700;
  font-size: 16px;
  line-height: 1.87;
  letter-spacing: 0.06em;
- color: var(--accent-color);
- background-color: var(--hover);
+ 
 cursor: pointer;
 
 padding: 10px 32px;
@@ -148,23 +202,29 @@ padding: 10px 32px;
   color: var(--title-text-color);
   
 }
-h2, h3 {
-  color: var(--title-text-color);
-}
+
 
 .container.benefits {
   margin-top: 94px;
   margin-bottom: 94px;
 }
+
 .benefits-h3 {
   padding-bottom: 10px;
 }
+
 .title-geometry {
   padding-bottom: 50px;
 }
 /* Кнопки */
 
 .button {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: Transparent 1px solid;
+
+  background-color: #F5F4FA;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -174,20 +234,17 @@ h2, h3 {
   letter-spacing: 0.03em;
   cursor: pointer;
 
-  display: inline-block;
-  padding: 6px 22px;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  border: Transparent 1px solid;
 }
 .li-button  :hover {
   background-color: var(--hover);
   color: var(--accent-color);
 }
+
 .ul-button .blue {
   color: var(--accent-color);
   background-color: var(--hover);
 }
+
 .sorting {
   background: var(--accent-color);
   width: 370px;
@@ -196,10 +253,12 @@ h2, h3 {
   border: 1px solid #EEEEEE;
   
 }
+
 .sorting :hover,
 .sorting :focus {
 text-decoration: none;
 }
+
 .sorting a {
   text-decoration: none;
 }
@@ -207,21 +266,21 @@ text-decoration: none;
 .our-team {
   background-color: #F5F4FA;
 }
+
 .our-team-people {
   background-color: var(--accent-color);  
   width: 270px;
   height: 368px;
   top: 1632px;
 }
-p {
-  color: var(--primary-text-color);
+
+.main-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 /* footer */
 
-footer {
-  background-color: #2F303A;
-  height: 252px;
-}
+
 
 .adress .ul-adress :hover,
 .adress .ul-adress :focus {
@@ -232,8 +291,21 @@ footer {
   color: var(--primary-text-color);
   font-style: normal;
 }
+
 .adress .white {
   color: var(--accent-color);
   font-style: normal;
 }
 
+.footer-adress {
+  padding-top: 20px;
+
+}
+
+.container.footer-div {
+  padding-top: 60px;
+
+}
+.ul-adress .item + .item {
+  margin-top: 9px;
+}
