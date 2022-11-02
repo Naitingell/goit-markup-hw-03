@@ -23,35 +23,43 @@
         <a class="logo-1" href="./index.html" lang="en">Web<span class="logo-2">Studio</span></a>
         <nav>
           <ul class="ul-nav">
-            <li class="item"><a class="link backlight" href="./index.html">Студія</a></li>
-            <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
             <li class="item"><a class="link" href="#">Контакти</a></li>
+            <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item"><a class="link backlight" href="./index.html">Студія</a></li>
           </ul>
         </nav>
         <ul class="adress-header">
-          <li class="item"><a class="link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
+          <li class="item">
+            <a class="link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+          </li>
           <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <div class="hero-button">
-          <button class="button hero-button1" type="button">Замовити послугу</button>
+        <div class="section section-hero">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <div class="hero-button">
+            <button class="button hero-button1" type="button">Замовити послугу</button>
+          </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section-benefits">
         <div class="container benefits">
-          <h2 class="title-section h2-hidden">Наші переваги</h2>
+          <h2 class="title-section visually-hidden">Наші переваги</h2>
           <ul class="ul-benefits">
             <li class="item">
               <h3 class="benefits-h3">Увага до деталей</h3>
-              <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              <p class="text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
             </li>
             <li class="item">
               <h3 class="benefits-h3">Пунктуальність</h3>
-              <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              <p class="text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
             </li>
             <li class="item">
               <h3 class="benefits-h3">Планування</h3>
@@ -59,7 +67,9 @@
             </li>
             <li class="item">
               <h3 class="benefits-h3">Сучасні технології</h3>
-              <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              <p class="text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
             </li>
           </ul>
         </div>
@@ -94,8 +104,10 @@
                 alt="Ігор Дем'яненко, продуктовий дизайнер"
                 width="270"
               />
-              <h3 class="h3-team">Ігор Дем'яненко</h3>
-              <p class="text-team" lang="en">Product Designer</p>
+              <div class="team">
+                <h3 class="h3-team">Ігор Дем'яненко</h3>
+                <p class="text-team" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="our-team-people">
               <img
@@ -103,13 +115,17 @@
                 alt="Ольга Рєпіна, фронтенд розробник"
                 width="270"
               />
-              <h3 class="h3-team">Ольга Рєпіна</h3>
-              <p class="text-team" lang="en">Frontend Developer</p>
+              <div class="team">
+                <h3 class="h3-team">Ольга Рєпіна</h3>
+                <p class="text-team" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="our-team-people">
               <img src="./images/3section5.jpg" alt="Микола Тарасов, маркетолог" width="270" />
-              <h3 class="h3-team">Микола Тарасов</h3>
-              <p class="text-team" lang="en">Marketing</p>
+              <div class="team">
+                <h3 class="h3-team">Микола Тарасов</h3>
+                <p class="text-team" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="our-team-people">
               <img
@@ -117,18 +133,22 @@
                 alt="Михайло Єрмаков, дизайнер інтерфейсу користувача"
                 width="270"
               />
-              <h3 class="h3-team">Михайло Єрмаков</h3>
-              <p class="text-team" lang="en">UI Designer</p>
+              <div class="team">
+                <h3 class="h3-team">Михайло Єрмаков</h3>
+                <p class="text-team" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container footer-div">
-        <a class="logo-1 logo-footer" href="./index.html" lang="en">Web<span class="logo-3">Studio</span></a>
-        <address class="adress">
-          <ul class="ul-adress footer-adress">
+        <a class="logo-1 logo-footer" href="./index.html" lang="en"
+          >Web<span class="logo-3">Studio</span></a
+        >
+        <address class="adress footer-adress">
+          <ul class="ul-adress">
             <li class="item">
               <a
                 class="link white"
@@ -141,7 +161,9 @@
             <li class="item">
               <a class="link grey" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
             </li>
-            <li class="item"><a class="link grey" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a class="link grey" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
